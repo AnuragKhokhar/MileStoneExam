@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
+    <style>
+        .list-image {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .list-image li::before {
+            content: "";
+            background-image: url('./assets/icon.png'); 
+            background-size: contain;
+            display: inline-block;
+            width: 40px; 
+            height: 40px; 
+            margin-right: 10px; 
+            vertical-align: middle;
+        }
+        .checked {
+            color: orange;
+        }
+        
+        .custom-symbol {
+            font-size: 67px;
+        }
+        .custom-symbol1 {
+            font-size: 40px;
+            padding: 5px;
+        }
+        .social{
+            font-size:large;
+            padding: 6px;
+        }
+  
+    </style>
+    
+</head>
+<body class="text-gray-700">
+    <nav class="flex justify-between items-center p-4 pr-10 pl-10">
+        <img src="./assets/logo.png" alt="logo" class="w-14">
+        <div class="flex gap-7">
+            <div>
+                <label for="product" id="q">PRODUCTS</label>
+                <select name="product" id="product"></select>
+            </div>
+            <p>GALLERY</p>
+            <p>CONTACT</p>
+        </div>
+        <div class="flex gap-5">
+            <button>LOG IN</button>
+            <button class="bg-gray-700 text-white p-2 pl-4 pr-4 rounded">SIGN UP</button>
+        </div>
+    </nav>
+    <hr>
+    <section class="flex justify-between p-8">
+        <div class="flex flex-col gap-16 pt-12">
+            <h1 class="text-7xl font-light text-gray-700 ">LET'S RIDE <br><span class="font-semibold">THE FUTURE.</span></h1>
+            <hr class="w-60 border-gray-700 border-2">
+            <p class="text-xl">Simple and sleek design with users in mind.</p>
+            <div class="flex justify-between">
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl text-white bg-gray-700 pl-2 pr-2 pb-1">&#8594;</span>
+                    <p class="font-semibold">Buy now</p>
+                </div>
+                <div class="flex gap-4 text-gray-700">
+                    <p class="font-semibold">Watch our <br>video how <br>it works</p>
+                    <img src="./assets/header play button.png" alt="playButton">
+                </div>
+            </div>
+        </div>
+        <img src="./assets/header image.png" alt="bike" class="w-7/12">
+    </section>
+    <section class="flex justify-end p-8 gap-7">
+        <img src="./assets/01.png" alt="01" class="h-24">
+        <div class="flex justify-center items-center bold">
+            <button class="border-2 border-gray-500 h-10 rounded-l-full w-11 pl-2"><img src="./assets/navBefore.png" alt="nav1" class=""></button>
+            <button class="border-2 border-gray-500 h-10 rounded-r-full border-l-0 w-11 pl-2"><img src="./assets/navNext.png" alt="nav2"></button>
+        </div>
+    </section>
+    <section class="flex justify-around text-gray-700">
+        <div class="shadow-2xl p-5">
+            <h1 class="text-3xl font-bold mb-2">105 <span class="text-sm">lbs</span></h1>
+            <p class="text-sm">Net Weight</p>
+        </div>
+        <div class="shadow-2xl p-5">
+            <h1 class="text-3xl font-bold mb-2">26 <span class="text-sm">mph</span></h1>
+            <p class="text-sm">Net Top Speed</p>
+        </div>
+        <div class="shadow-2xl p-5">
+            <h1 class="text-3xl font-bold mb-2">38 <span class="text-sm">miles</span></h1>
+            <p class="text-sm">Max Range</p>
+        </div>
+        <div class="shadow-2xl p-5">
+            <h1 class="text-3xl font-bold mb-2">89 <span class="text-sm">nm</span></h1>
+            <p class="text-sm">Max Torques</p>
+        </div>
+        <div class="shadow-2xl p-5">
+            <h1 class="text-3xl font-bold mb-2">22% <span class="text-sm">slope</span></h1>
+            <p class="text-sm">Hill Climbing</p>
+        </div>
+        <div class="shadow-2xl p-5">
+            <h1 class="text-3xl font-bold mb-2 text-center">2x</h1>
+            <p class="text-sm">Hydraulic Disc Brakes</p>
+        </div>
+    </section>
+    <section class="mt-28">
+        <div class="flex flex-col items-center">
+            <h class="text-4xl font-bold">Product Information</h>
+            <p class="mt-4">Our Scooter has following unique design and technology features:</p>
+        </div>
+        <div class="flex justify-around">
+            <img src="./assets/product information image.png" alt="bike" class="w-6/12">
+            <div class="flex justify-center items-center">
+                <ul class="list-image ml-8 text-xl pr-8">
+                    <li class="mb-6">Lightweight aircraft-grade aluminum frame</li>
+                    <li class="mb-6">Car-grade lithium battery</li>
+                    <li class="mb-6">Self-balanced</li>
+                    <li class="mb-6">Plug n play</li>
+                    <li class="mb-6">Quick-release adapter</li>
+                    <li class="mb-6">RFID key card</li>
+                  </ul>
+            </div>
+        </div>
+    </section>
+
+    <img src="./assets/high efficiency motor.png" alt="motor" class="pr-4 pl-4">
+
+    <section>
+        <h1 class="text-4xl font-bold text-center">Multiple Accessories</h1>
+        <p class="mt-4 text-center">There are multiple modes for the scooter for your multiple needs</p>
+        <div class="flex justify-around mt-16">
+            <div>
+                <h1 class="text-4xl font-bold">Golf Bag Rock</h1>
+                <ul class="list-image">
+                    <li class="text-xl mt-8">Material:Aluminium alloy</li>
+                    <li class="text-xl mt-8">Color:Black</li>
+                    <li class="text-xl mt-8">Capacity:45lbs</li>
+                    <li class="text-xl mt-8">Ease:Steady & adjustable</li>
+                </ul>
+            </div>
+            <img src="./assets/golf bag rock.png" alt="golf" class="w-7/12">
+        </div>
+    </section>
+    <section class="flex justify-between pr-20 mt-20">
+        <div>
+            <img src="./assets/shopping rack.png" alt="">
+        </div>
+        <div>
+            <h class="text-4xl font-bold">Shopping Rack</h>
+            <ul class="list-image">
+                <li class="text-xl mt-8">Material:Aluminum alloy</li>
+                <li class="text-xl mt-8">Color:Black</li>
+                <li class="text-xl mt-8">Capacity:45lbs</li>
+                <li class="text-xl mt-8">Ease:Quick & adjustable</li>
+            </ul>
+        </div>
+    </section>
+    <div class="text-3xl font-bold border-2 border-gray-700 inline-block ml-96 mr-96 rounded-md p-2 mt-20 flex-wrap">More Accessories Coming Soon</div>
+    <section>
+        <h1 class="text-4xl font-bold text-center mt-20">Gallery</h1>
+        <p class="mt-4 text-center">View gallery of our products and make yourself satisfied with our creation.</p>
+        <div class="grid grid-cols-2 gap-5 p-8">
+            <img src="./assets/gallery scooter.png" alt="scooter" class="w-10/12 mt-44">
+            <img src="./assets/gallery built quality.png" alt="built quality" class="w-10/12 mt-8">
+            <div class="flex flex-col gap-4">
+                <p class="text-xl border-2 border-gray-700 text-center w-96 rounded-md p-2">Battery Images</p>
+                <p class="text-xl border-2 border-gray-700 text-center w-96 rounded-md p-2">Spare Parts Images</p>
+                <p class="text-xl border-2 border-gray-700 text-center w-96 rounded-md p-2">Charging Cable Images</p>
+            </div>
+            <img src="./assets/gallery parts.png" alt="parts" class="w-9/12 -mt-20 w-10/12">
+        </div>
+    </section>
+    <h1 class="text-5xl font-bold text-center mt-20">Colors</h1>
+    <p class="mt-4 text-center">Checkout our products colors.</p>
+    <section class="relative">
+            <img src="./assets/gallery scooter.png" alt="scooter" class="mt-20 w-full">
+        <div class="flex w-fit absolute -bottom-40 ml-14">
+            <img src="./assets/color-scooter-1.png" alt="color1" class="w-72 h-72">
+            <img src="./assets/color-scooter-2.png" alt="color2" class="w-72 h-72">
+            <img src="./assets/color-scooter-3.png" alt="color3" class="w-72 h-72">
+            <img src="./assets/color-scooter-4.png" alt="color4" class="w-72 h-72">
+        </div>
+    </section>
+    <section class="bg-gray-100 p-10 mt-40">
+        <h1 class="text-5xl font-bold text-center ">Testimonials</h1>
+        <div class="flex justify-center gap-12 mt-12">
+            <div class="shadow-2xl p-10 bg-white text-center">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <div class="mt-6">
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure.</p>
+                </div>
+                <div class="flex justify-center gap-4 mt-8">
+                    <img src="./assets/serhiy hipskyy.png" alt="">
+                    <p class="font-bold">Serhiy Hipskyy <br><span class="font-normal">CEO Universal</span></p>
+                </div>
+            </div>
+            <div class="border-2 p-10  border-gray-400 text-center">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <div class="mt-6">
+                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                </div>
+                <div class="flex justify-center gap-4 mt-8">
+                    <img src="./assets/Justus Menke.png" alt="">
+                    <p class="font-bold">Serhiy Hipskyy <br><span class="font-normal">CEO Universal</span></p>
+                </div>
+            </div>
+            <div class="border-2 p-10 border-gray-400 text-center">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <div class="mt-6">
+                    <p>At vero eos at accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium volupatatum deleniti atque corrupti quos dolores.</p>
+                </div>
+                <div class="flex justify-center gap-4 mt-8">
+                    <img src="./assets/Britain Eriksen.png" alt="">
+                    <p class="font-bold">Serhiy Hipskyy <br><span class="font-normal">CEO Universal</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-10 flex justify-center items-center gap-5">
+            <span class="material-symbols-outlined custom-symbol">arrow_circle_left</span>
+            <span class="material-symbols-outlined custom-symbol1 bg-gray-600 rounded-full text-white">arrow_forward</span>
+        </div>
+    </section>
+    <section class="flex flex-col justify-center items-center">
+        <h1 class="text-4xl font-bold mt-20">Subscribe To Newsletter</h1>
+        <p class="mt-4">Subscribe to our newletter to get amazing offers in future.</p>
+        <div class="mt-10">
+            <input type="email" placeholder="Enter your Email." class="bg-gray-200 pt-3 pb-3 pl-7 w-72 rounded-lg placeholder-gray-700 ">
+            <button class="bg-gray-700 text-gray-100 p-3 pl-8 pr-8 rounded-lg ">Get Start</button>
+        </div>
+    </section>
+    <footer class="bg-gray-700 text-white flex mt-32">
+        <img src="./assets/footer scooter.png" alt="footer scotter">
+        <div class="flex gap-28 mt-20">
+            <div>
+                <h1 class="font-bold">About</h1>
+                <ul>
+                    <li class="mt-8">Company</li>
+                    <li class="mt-8">Teams</li>
+                    <li class="mt-8">Profile</li>
+                    <li class="mt-8">Careers</li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="font-bold">Resources</h1>
+                <ul>
+                    <li class="mt-8">Contact</li>
+                    <li class="mt-8">Application</li>
+                    <li class="mt-8">FQA Features</li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="font-bold">Legal</h1>
+                <ul>
+                    <li class="mt-8">Copyright Privacy</li>
+                    <li class="mt-8">Policy Disclaimer</li>
+                    <li class="mt-8">Terms</li>
+                </ul>
+                <div class="mt-10 flex gap-6">
+                    <a href="#" class="fa fa-facebook text-gray-700 bg-white rounded-full social"></a>
+                    <a href="#" class="fa fa-twitter text-gray-700 bg-white rounded-full social"></a>
+                    <a href="#" class="fa fa-instagram text-gray-700 bg-white rounded-full social"></a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <p class="bg-gray-700 text-white text-center p-10">&#169;Copyright 2021. All rights reserved</p>
+</body>
+</html>    
